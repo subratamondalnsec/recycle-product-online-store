@@ -1,0 +1,139 @@
+
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/* Store section styles */
+.store-section {
+    padding: 20px;
+}
+
+.store-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of products */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual product card styles */
+.store-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.store-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.store-item h2 {
+    font-size: 18px;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buy-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fav-wrapper {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fav-btn{
+    background-color: #e74c3c;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    background-color: rgb(154, 216, 238);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer span {
+    display: block;
+    margin-top: 10px;
+}
+
+
+.foot {
+    background-color: #004080;
+    color: white;
+    margin: auto;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .store-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .store-items {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on very small screens */
+    }
+}
